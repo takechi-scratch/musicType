@@ -1,7 +1,7 @@
 # musicType
 
 ## 概要
-曲に合わせて歌詞をタイピングするゲーム(？)
+曲に合わせて歌詞をタイピングするゲーム(？) 製作中です。
 
 [Render](https://musictype.onrender.com/)で公開中です。
 
