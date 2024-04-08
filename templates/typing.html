@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musicType</title>
+    <link rel="stylesheet" type="text/css" href="./static/style.css">
+</head>
+
+<body>
+    <h1>{{ video_data.title }}</h1>
+    <p class="notes">{{ video_data.notes }}</p>
+    <div id="typing">
+        <noscript>
+            <p class="msg">本ゲームをプレイするにはJavaScriptを有効化してください。</p>
+        </noscript>
+        <p>下のボタンをクリックするとスタートします。</p>
+        <button id="start" type="button">再生開始！</button>
+        <p id="keys"></p>
+    </div>
+    <script src="./static/script.js"></script>
+
+</body>
+
+</html>
