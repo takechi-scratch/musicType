@@ -1,0 +1,16 @@
+/* Basic styling */
+body {
+    font-family: "Noto Sans JP", Arial, sans-serif;
+    background-color: #f4fcff;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+.finishedStr {
+    color:#999999
+}

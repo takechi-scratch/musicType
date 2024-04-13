@@ -2,12 +2,13 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route("/", methods=["GET"])
 def sample_form():
     video_data = {
-        'title': 'タイトル',
-        'notes': '動画の紹介とかをします。頑張ってね！！',
+        "title": "テストタイピング",
+        "notes": "現在製作中です。原型はだいぶできて来ました。",
     }
-    return render_template('typing.html', video_data=video_data)
-if __name__ == '__main__':
+    return render_template("play.html", video_data=video_data)
+
+if __name__ == "__main__":
     app.run(debug=True)
