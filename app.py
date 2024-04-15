@@ -3,7 +3,11 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
-def sample_form():
+def home():
+    return render_template("index.html")
+
+@app.route("/play/", methods=["GET"])
+def typing():
     video_data = {
         "title": "テストタイピング",
         "notes": "現在製作中です。原型はだいぶできて来ました。",

@@ -20,6 +20,6 @@
 効果音として、一部に[効果音ラボ](https://soundeffect-lab.info/)さんの音源を使用しています。
 再配布を防止するため、こちらの音源はネット上に公開することはできません。
 
-その他のコード・素材は、著作者のライセンスに準じます。
+その他のコード・素材は、著作権者のライセンスに準じます。
 
 My source code in the repository is licensed under the MIT License, see the LICENSE.txt file for details.

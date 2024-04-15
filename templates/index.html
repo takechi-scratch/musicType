@@ -11,23 +11,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    
+
     <link rel="icon" href="/takechi_icon.jpg">
 </head>
 
 <body>
-    <h1>{{ video_data.title }}</h1>
-    <p class="notes">{{ video_data.notes }}</p>
+    <h1>musicType</h1>
+    <p>音楽の歌詞でタイピングをしよう！</p>
     <div id="player"></div>
-    <div id="typing">
+    <div id="start">
         <noscript>
             <p class="msg">本ゲームをプレイするにはJavaScriptを有効化してください。</p>
         </noscript>
-        <p class="prepare">スペースキーまたは動画クリックでスタートします。</p>
-        <p><span class="finishedStr"></span><span class="yetStr"></span></p>
-        <p>経過時間:<span class="time"></span></p>
+
+        <form id="myForm" action="" method="get">
+            <label for="urlInput">Youtube動画のID:</label>
+            <input type="text" id="urlInput" name="url" value="-VKIqrvVOpo">
+            <button type="submit">移動</button>
+        </form>
+
     </div>
-    <script src="/static/play/script.js"></script>
+    <script src="/static/home/script.js"></script>
 
 </body>
 
