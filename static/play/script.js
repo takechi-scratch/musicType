@@ -2,32 +2,34 @@ let startD
 let typingStr
 let typingNumber
 console.log("コンソールへようこそ！")
+document.querySelector(".prepare").innerText = "準備中…";
 
 const url = new URL(window.location.href);
 const params = new URLSearchParams(url.search);
 
 // youtube IFrame Player API の下準備
-var tag = document.createElement('script');
+var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
+var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 // IFrame の生成
 var player;
 function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-        height: '360',
-        width: '640',
+    player = new YT.Player("player", {
+        height: "360",
+        width: "640",
         videoId: params.get("v"),
         events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-        }
+            "onReady": onPlayerReady,
+            "onStateChange": onPlayerStateChange
+        },
+        playerVars: {"controls": 0, "disablekb": 1}
     });
 }
 
 function onPlayerReady(event) {
-    ; // Playerの準備ができたとき
+    document.querySelector(".prepare").innerText = "スペースキーまたは動画クリックでスタートします。"; // Playerの準備ができたとき
 }
 
 function onPlayerStateChange(event) {
@@ -41,7 +43,7 @@ function main(){
     typingStr = "reta-pakkudegenkinokurehasubetesagidesu";
     typingNumber = 0;
 
-    document.querySelector('.prepare').remove();
+    document.querySelector(".prepare").remove();
 
     const interval = setInterval(function() {
         document.querySelector(".time").innerText = Math.round((Date.now() - startD) / 10) / 100;
@@ -57,8 +59,12 @@ function main(){
 
 document.addEventListener("keydown", (event) => {
     if (event.key == " ") {
-        player.playVideo();
-        main();
+        if (player.getPlayerState() != 1){
+            player.playVideo();
+            main();
+        } else {
+            player.pauseVideo()
+        }
         return
     }
 
