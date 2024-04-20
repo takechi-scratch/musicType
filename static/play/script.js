@@ -68,9 +68,9 @@ document.addEventListener("keydown", (event) => {
         return
     }
 
-    if (event.key.length == 1) {
+    if (event.key.length == 1 & player.getPlayerState() == 1) {
         if (event.key == typingStr[typingNumber]) {
-            typingNumber++;
+            typingNumber++; // インクリメント
             const sound = new Audio("/static/sound/type.wav");
             sound.play();
         } else {
