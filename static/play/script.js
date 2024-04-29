@@ -7,6 +7,14 @@ document.querySelector(".prepare").innerText = "準備中…";
 const url = new URL(window.location.href);
 const params = new URLSearchParams(url.search);
 
+// const fs = require('fs');    // モジュールの読み込み
+
+// const json = fs.readFileSync(<ファイルパス>, <encoding>)
+// const data = JSON.parse(json)
+
+// まとめて書く
+// const data = JSON.parse(fs.readFileSync(<ファイルパス>, <encoding>))
+
 // youtube IFrame Player API の下準備
 var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";

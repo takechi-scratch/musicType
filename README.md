@@ -12,17 +12,25 @@
 まずは、ライセンスフリーの音源（[魔王魂](https://maou.audio/)など）の楽曲でできるようにしたいと思っています。
 
 広告収入などで歌詞の著作権料が払える見込みまで達したら、楽曲を開放していきたいです。
+非商用での包括的利用許諾契約も検討中です。（月1000円）
 
 ## ライセンス
-たーけが作成したソースコード・素材は、[MIT license](https://opensource.org/license/MIT) です。
+たーけが作成したソースコード・素材は、[MIT license](https://opensource.org/license/MIT) とします。
 利用される際は、ライセンスファイルを必ずお読みください。
 
-効果音として、一部に[効果音ラボ](https://soundeffect-lab.info/)さんの音源を使用しています。
-再配布を防止するため、こちらの音源をネット上に公開することはできません。
-
-その他のコード・素材は、著作権者のライセンスに準じます。
+以下の「クレジット」に記載されているコードや素材は、著作権者のライセンスに準じます。
 
 My source code in the repository is licensed under the MIT License, see the LICENSE.txt file for details.
+
+## クレジット
+敬称略としています。
+
+- [bootstrap](https://github.com/twbs/bootstrap)
+    - [MIT license](https://opensource.org/license/MIT) で利用しています。
+- [効果音ラボ](https://soundeffect-lab.info/)
+    - 再配布を防止するため、こちらの音源をネット上に公開することはできません。
+
+以上の皆様、本当にありがとうございます。
 
 ## 製作者について
 - Scratch [@takechi-scratch](https://scratch.mit.edu/users/takechi-scratch/) 

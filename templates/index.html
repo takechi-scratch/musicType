@@ -1,38 +1,18 @@
-<!DOCTYPE html>
-<html lang="ja">
+{% extends "layout.html" %}
+{% block content %}
+<h1>musicType</h1>
+<p>曲の歌詞でタイピング（開発中）</p>
+<div id="start">
+    <noscript>
+        <p class="msg">本ゲームをプレイするにはJavaScriptを有効化してください。</p>
+    </noscript>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>musicType</title>
-    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <form id="myForm" action="" method="get">
+        <label for="urlInput">Youtube動画のID:</label>
+        <input type="text" id="urlInput" name="url" value="Qd01-6xVSHk">
+        <button type="submit">移動</button>
+    </form>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="/static/icon.webp">
-</head>
-
-<body>
-    <h1>musicType</h1>
-    <p>曲の歌詞でタイピング（開発中）</p>
-    <div id="player"></div>
-    <div id="start">
-        <noscript>
-            <p class="msg">本ゲームをプレイするにはJavaScriptを有効化してください。</p>
-        </noscript>
-
-        <form id="myForm" action="" method="get">
-            <label for="urlInput">Youtube動画のID:</label>
-            <input type="text" id="urlInput" name="url" value="Qd01-6xVSHk">
-            <button type="submit">移動</button>
-        </form>
-
-    </div>
-    <script src="/static/home/script.js"></script>
-
-</body>
-
-</html>
+</div>
+<script src="/static/home/script.js"></script>
+{% endblock %}
