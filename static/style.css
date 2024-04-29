@@ -14,3 +14,14 @@ p {
 .finishedStr {
     color:#999999
 }
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    width: 50%;
+}
+
+.score * {
+    width: 150px;
+}
